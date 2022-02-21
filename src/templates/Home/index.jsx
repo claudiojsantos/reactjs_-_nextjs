@@ -31,7 +31,7 @@ export const Home = () => {
 
   useEffect(() => {
     handleLoadPosts(0, postsPerPage);
-  }, [handleLoadPosts, 0, postsPerPage]);
+  }, [handleLoadPosts, postsPerPage]);
 
   const loadMorePosts = () => {
     const nextpage = page + postsPerPage;
